@@ -15,12 +15,6 @@
   grid-template-columns: 50px 1fr;
 }
 
-.channel-picture {
-}
-
-.video-info {
-}
-
 .profile-picture {
   width: 36px;
   border-radius: 50px;
@@ -48,8 +42,25 @@
   row-gap: 40px;
 }
 
+@media (max-width: 800px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .video-time {
-  font-family: Roboto, Arial;
   font-size: 12px;
   font-weight: 500;
   padding: 4px;
